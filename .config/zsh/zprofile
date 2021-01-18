@@ -7,7 +7,7 @@ export PATH="$PATH:/opt/custom_scripts/jack2/"
 
 # default programs
 export BROWSER='firefox'
-export EDITOR='notepadqq'
+export EDITOR='nvim'
 export PAGER='less'
 export READER='zathura'
 export TERMINAL='st'
