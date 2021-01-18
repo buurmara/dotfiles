@@ -71,7 +71,6 @@ PS2="> "
 # plugins
 source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh 2>/dev/null
 
-## von arcolinux geklaut xD ##
 ## ex = EXtractor for all kinds of archives
 ## usage: ex <file>
 function ex()
