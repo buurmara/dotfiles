@@ -20,14 +20,11 @@ setxkbmap de &
 picom -f &
 
 # Wallpaper
-xwallpaper --zoom "/data/pictures/wallpapers/FWO_3440x1440.jpg" &
+xwallpaper --zoom "/data/pictures/wallpapers/sun.png" &
 #hsetroot -solid '#000000' &
 
 # jack2 setup
 start_jack2.sh
-
-# DWM Status
-#/home/rasmus/suckless/dwm-bar/dwm_bar.sh &
 
 # start redshift
 redshift -O 3500
@@ -39,7 +36,7 @@ dwmblocks &
 blueman-applet &
 
 # enable automatic locking
-xautolock -time 5 -locker slock &
+xautolock -time 5 -locker slock -corners +00- &
 
 # remove the mouse when idle
 unclutter &
