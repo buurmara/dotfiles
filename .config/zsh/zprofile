@@ -2,7 +2,6 @@
 
 # add scripts to the path
 export PATH="$PATH:$(du "$HOME/.local/bin" | cut -f2 | paste -sd ':' -)"
-export PATH="$PATH:/opt/custom_scripts/audiocontrol/"
 export PATH="$PATH:/opt/custom_scripts/jack2/"
 
 # default programs
