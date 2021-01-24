@@ -1,0 +1,52 @@
+#!/bin/bash
+
+#neovim
+alias vim='nvim'
+
+#update
+alias mirror='sudo reflector --protocol https --latest 49 --number 25 -c Germany --sort rate --verbose --save /etc/pacman.d/mirrorlist'
+alias cupdnc='yay -Syyu --devel --noconfirm; yay -Yc --noconfirm; yay -Sc --noconfirm'
+alias cupd='yay -Syyu --devel; yay -Yc; yay -Sc'
+alias syu='yay -Syu'
+
+#nvidia
+alias gpust='nvidia-smi'
+
+#list
+alias ls='ls --color=auto'
+alias la='ls -a'
+alias ll='ls -la'
+alias l='ls'
+alias l.="ls -A | egrep '^\."
+alias ldir='ls -d */'
+
+# change directory
+alias cd..='cd ..'
+alias cd...='cd ../..'
+alias cd....='cd ../../..'
+
+#typos
+alias dc='cd'
+alias pdw='pwd'
+alias sl='ls'
+
+#colorize grep
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+
+#documents view
+alias img='sxiv'
+alias pdf='zathura'
+
+#TeX Live
+alias tllm='tllocalmgr'
+
+# ping test
+alias tping='ping archlinux.org'
+
+# suckless
+alias suckrcp='sudo cp config.def.h config.h && sudo make clean install'
+
+# git
+alias dotfiles="git --git-dir=${XDG_DATA_HOME:-$HOME/.local/share}/dotfiles/ --work-tree=$HOME"
