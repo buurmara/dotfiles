@@ -3,6 +3,7 @@
 # add scripts to the path
 export PATH="$PATH:$(du "$HOME/.local/bin" | cut -f2 | paste -sd ':' -)"
 export PATH="$PATH:/opt/custom_scripts/jack2/"
+export PATH="$PATH:/opt/resolve/bin/"
 
 # default programs
 export BROWSER='firefox'
