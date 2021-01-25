@@ -11,8 +11,8 @@ set pumheight=10
 set hidden
 
 " spell checking
-set spell
-set spelllang=en,de
+"set spell
+"set spelllang=en,de
 
 " correct splits
 set splitbelow
@@ -20,18 +20,18 @@ set splitright
 
 " better search
 set ignorecase
+set smartcase
 set incsearch
-
-" theme
-syntax enable
-set termguicolors
 
 " indentation
 set tabstop=4
 set shiftwidth=4
 set smarttab
 set smartindent
-set autoindent
+"set autoindent
+
+" disable automatic continuation of commenting
+autocmd FileType * set formatoptions-=cro
 
 set conceallevel=0
 
@@ -41,6 +41,8 @@ set timeoutlen=500
 " global copy and paste buffer
 set clipboard=unnamedplus
 
+" leader key
+nnoremap <Space> <Nop>
 let g:mapleader = "\<Space>"
 
 " force write
