@@ -45,7 +45,7 @@ alias tllm='tllocalmgr'
 alias tping='ping archlinux.org'
 
 # suckless
-alias suckrcp='sudo cp config.def.h config.h && sudo make clean install'
+alias suckrcp='sudo cp config.def.h config.h && sudo make clean install; sudo make clean'
 
 # git
 alias dotfiles="git --git-dir=${XDG_DATA_HOME:-$HOME/.local/share}/dotfiles/ --work-tree=$HOME"
