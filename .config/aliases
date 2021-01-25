@@ -1,18 +1,17 @@
 #!/bin/sh
 
-#neovim
+# neovim
 alias vim='nvim'
 
-#update
+# update
 alias mirror='sudo reflector --protocol https --latest 49 --number 25 -c Germany --sort rate --verbose --save /etc/pacman.d/mirrorlist'
-alias cupdnc='yay -Syyu --devel --noconfirm; yay -Yc --noconfirm; yay -Sc --noconfirm'
-alias cupd='yay -Syyu --devel; yay -Yc; yay -Sc'
-alias syu='yay -Syu'
+alias cupdnc='paru -Syyu --devel --noconfirm; paru -Yc --noconfirm; paru -Sc --noconfirm'
+alias cupd='paru -Syyu --devel; paru -Yc; paru -Sc'
 
-#nvidia
+# nvidia
 alias gpust='nvidia-smi'
 
-#list
+# list
 alias ls='ls --color=auto'
 alias la='ls -a'
 alias ll='ls -la'
@@ -25,21 +24,21 @@ alias cd..='cd ..'
 alias cd...='cd ../..'
 alias cd....='cd ../../..'
 
-#typos
+# typos
 alias dc='cd'
 alias pdw='pwd'
 alias sl='ls'
 
-#colorize grep
+# colorize grep
 alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 
-#documents view
+# documents view
 alias img='sxiv'
 alias pdf='zathura'
 
-#TeX Live
+# TeX Live
 alias tllm='tllocalmgr'
 
 # ping test
