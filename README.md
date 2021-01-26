@@ -1,2 +1,2 @@
 # dotfiles
-My dotfiles ("inspirated" by github.com/weisbrja/dotfiles)
+My dotfiles ("inspired" by github.com/weisbrja/dotfiles)
