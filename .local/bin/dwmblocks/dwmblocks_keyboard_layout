@@ -1,0 +1,10 @@
+#!/bin/sh
+
+if setxkbmap -query | grep -Gq "layout:\s*de"
+then
+	layout='De'
+else
+	layout='Us'
+fi
+
+printf ' ^c#f1ebeb^LAY ^c#55bcce^%s ' "$layout"

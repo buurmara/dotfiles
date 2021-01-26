@@ -1,0 +1,3 @@
+#!/bin/sh
+
+free --mebi | awk 'NR == 2{printf(" ^c#f1ebeb^MEM ^c#dc2566^%2.2f/%2.2f GiB ", ($3 / 1024), ($2 / 1024))}'
