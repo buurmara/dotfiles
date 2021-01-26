@@ -1,0 +1,10 @@
+#!/bin/zsh
+
+# completion settings
+setopt EXTENDEDGLOB
+setopt GLOB_DOTS
+setopt ALIASES
+setopt CORRECT
+autoload -Uz compinit && compinit
+zstyle ':completion:*' menu select
+zmodload zsh/complist

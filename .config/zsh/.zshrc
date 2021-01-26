@@ -4,15 +4,14 @@
 setopt HIST_REDUCE_BLANKS
 setopt SHARE_HISTORY
 
+# aliases
+source "${XDG_CONFIG_HOME:-$HOME/.config}/aliases"
+
 # completion settings
-setopt EXTENDEDGLOB
-setopt GLOB_DOTS
-setopt ALIASES
-setopt CORRECT
-autoload -Uz compinit
-zstyle ':completion:*' menu select
-zmodload zsh/complist
-compinit
+source "${XDG_CONFIG_HOME:-$HOME/.config}/zsh/zcompletions"
+
+# shortcuts
+source "${XDG_CONFIG_HOME:-$HOME/.config}/zsh/zshortcuts"
 
 # vim mode
 bindkey -v
@@ -40,11 +39,6 @@ zle-line-init() {
 }
 zle -N zle-line-init
 
-# edit the current command in vim with ctrl-e
-autoload -Uz edit-command-line
-zle -N edit-command-line
-bindkey '^e' edit-command-line
-
 function precmd {
 set the terminal title to the current working directory
 	print -Pn "\e]0;%~\a"
@@ -58,8 +52,6 @@ function preexec {
 	echo -ne $cursor_beam
 }
 
-# aliases
-source "$XDG_CONFIG_HOME/aliases"
 
 # colors
 autoload -Uz colors && colors
