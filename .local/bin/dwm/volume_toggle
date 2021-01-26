@@ -1,0 +1,5 @@
+#!/bin/sh
+
+pamixer -t
+
+kill -36 $(pidof dwmblocks)

@@ -1,0 +1,5 @@
+#!/bin/sh
+
+amixer set Capture toggle
+
+kill -36 $(pidof dwmblocks)

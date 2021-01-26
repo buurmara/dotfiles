@@ -1,0 +1,10 @@
+#!/bin/sh
+
+if setxkbmap -query | grep -Gq "layout:\s*de"
+then
+	setxkbmap us altgr-intl
+else
+	setxkbmap de '' 
+fi
+
+kill -35 $(pidof dwmblocks)
