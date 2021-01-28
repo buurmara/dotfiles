@@ -36,7 +36,7 @@ dwmblocks &
 blueman-applet &
 
 # enable automatic locking
-xautolock -time 5 -locker slock -corners +00- &
+xautolock -time 5 -locker slock -corners 000- &
 
 # remove the mouse when idle
 unclutter &
