@@ -4,11 +4,4 @@ volume=$(pamixer --get-volume)
 
 speakers=$(pamixer --get-mute | sed 's/false/A/;s/true/M/')
 
-if amixer get Capture | grep -Fwq '[on]'
-then
-	microphone='R'
-else
-	microphone='M'
-fi
-
-printf ' ^c#f1ebeb^VOL ^c#9358fe^%3s%% %s %s ' "$volume" "$speakers" "$microphone"
+printf ' ^c#f1ebeb^VOL ^c#9358fe^%3s%% %s %s ' "$volume" "$speakers"
