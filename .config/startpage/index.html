@@ -6,14 +6,21 @@
     <title>startpage</title>
 </head>
 <body>
-<iframe src="https://duckduckgo.com/search.html?width=450&duck=yes&focus=yes"
-        style="overflow:hidden;margin:0;padding:0;width:633px;height:60px;"
-        frameborder="0" id="searchbox"></iframe>
+<form class="searchbox" name="search" action="https://duckduckgo.com/">
+    <input type="text" class="search-txt" autocomplete="off" autofocus placeholder="" name="q">
+    <input type="hidden" value="1" name="kh">
+    <input type="hidden" value="1" name="kn">
+    <input type="hidden" value="1" name="kac">
+    <input type="hidden" value="1" name="kc">
+    <a class="search-btn" href="https://duckduckgo.com">
+        <img src="icons/duck.png" alt="Duckduckgo" width="42">
+    </a>
+</form>
 <div id="links">
-    <a href="https://archlinux.org"><img src="icons/arch.png" alt="Arch" width="100" height="100"></a>
-    <a href="https://github.com"><img src="icons/github.png" alt="Github" width="100" height="100"></a>
-    <a href="https://youtube.com"><img src="icons/youtube.png" alt="Youtube" width="100" height="100"></a>
-    <a href="https://netflix.com"><img src="icons/netflix.png" alt="Netflix" width="100" height="100"></a>
+    <a href="https://archlinux.org"><img src="icons/arch.png" alt="Arch" height="100"></a>
+    <a href="https://github.com"><img src="icons/github.png" alt="Github" height="100"></a>
+    <a href="https://youtube.com"><img src="icons/youtube.png" alt="Youtube" height="100"></a>
+    <a href="https://netflix.com"><img src="icons/netflix.png" alt="Netflix" height="100"></a>
 </div>
 </body>
 </html>

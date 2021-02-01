@@ -1,17 +1,46 @@
 :root {
-    --background: #232323;
+    --bg: #232323;
+    --fg: #2F3640;
 }
 
 body {
-    background: var(--background);
+    background: var(--bg);
 }
 
-#searchbox {
+.searchbox {
     position: absolute;
     top: 20%;
     left: 50%;
     margin: 0 -50% 0 0;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
+    background: var(--fg);
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.search-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+}
+
+.search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: #FFF;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 50vw;
 }
 
 #links {
