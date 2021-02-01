@@ -51,3 +51,6 @@ alias sucklrcp='sudo cp config.def.h config.h && sudo make clean install; sudo m
 # git
 alias dotfiles="git --git-dir=${XDG_DATA_HOME:-$HOME/.local/share}/dotfiles/ --work-tree=$HOME"
 alias sucklgit="git --git-dir=$HOME/.local/source/suckless/.git --work-tree=$HOME/.local/source/suckless"
+
+# calculator
+alias calc='echo CALCULATOR && bc -q'
