@@ -5,7 +5,7 @@ export PATH="$PATH:$(du "$HOME/.local/bin" | cut -f2 | paste -sd ':' -)"
 export PATH="$PATH:/opt/resolve/bin/"
 
 # default programs
-export BROWSER='brave'
+xdg-settings set default-web-browser brave-browser.desktop
 export EDITOR='nvim'
 export PAGER='less'
 export READER='zathura'
