@@ -54,3 +54,6 @@ alias sucklgit="git --git-dir=$HOME/.local/source/suckless/.git --work-tree=$HOM
 
 # calculator
 alias calc='echo CALCULATOR && bc -q'
+
+# calendar
+alias cal='cal -m'
