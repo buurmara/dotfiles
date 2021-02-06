@@ -7,8 +7,9 @@ Plugin 'Shougo/deoplete.nvim', {'do': ':UpdateRemotePlugins'}
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'ap/vim-css-color'
 Plugin 'lervag/vimtex'
+Plugin 'rust-lang/rust.vim'
 call vundle#end()
-filetype plugin on
+filetype plugin indent on
 
 " deoplete
 let g:deoplete#enable_at_startup = 1
