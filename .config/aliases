@@ -4,7 +4,7 @@
 alias vim='nvim'
 
 # update
-alias mirror='sudo reflector --protocol https --latest 49 --number 25 -c Germany --sort rate --verbose --save /etc/pacman.d/mirrorlist'
+alias mirror='reflector --country Germany --protocol https --latest 50 --fastest 15 --age 18 --sort rate --verbose --save /etc/pacman.d/mirrorlist'
 alias cupdnc='paru -Syyu --devel --noconfirm; paru -c --noconfirm; paru -Sc --noconfirm'
 alias cupd='paru -Syyu --devel; paru -c; paru -Sc'
 
