@@ -20,8 +20,8 @@ setxkbmap de &
 picom -f &
 
 # Wallpaper
-#xwallpaper --zoom "/data/pictures/wallpapers/sun.png" &
-hsetroot -solid '#232323' &
+xwallpaper --zoom "/data/pictures/wallpapers/current_wallpaper" &
+#hsetroot -solid '#232323' &
 
 # jack2 setup
 start_jack2.sh
