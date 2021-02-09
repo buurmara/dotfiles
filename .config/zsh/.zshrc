@@ -66,9 +66,9 @@ source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.
 # z command
 . /opt/z/z.sh
 
-## ex = EXtractor for all kinds of archives
-## usage: ex <file>
-function ex()
+## extr = EXTRactor for all kinds of archives
+## usage: extr <file>
+function extr()
 {
 	if [ -f $1 ] ; then
 		case $1 in
@@ -86,7 +86,7 @@ function ex()
 			*.deb)		ar x $1		;;
 			*.tar.xz)	tar xf $1	;;
 			*.tar.zst)	unzstd $1	;;
-			*)		echo "'$1' cannot be extracted via ex()" ;;
+			*)		echo "'$1' cannot be extracted via extr()" ;;
 		esac
 	else
 		echo "'$1' is not a valid file"
