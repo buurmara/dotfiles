@@ -1,32 +1,34 @@
-filetype off
+" plugins
 set rtp+=~/.config/nvim/bundle/Vundle.vim
-call vundle#begin('~/.config/nvim/bundle')
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'drewtempelmeyer/palenight.vim'
-Plugin 'Shougo/deoplete.nvim', {'do': ':UpdateRemotePlugins'}
-Plugin 'jiangmiao/auto-pairs'
-Plugin 'ap/vim-css-color'
-Plugin 'lervag/vimtex'
-Plugin 'rust-lang/rust.vim'
-call vundle#end()
-filetype plugin indent on
 
-" deoplete
-let g:deoplete#enable_at_startup = 1
+call vundle#begin('~/.config/nvim/bundle')
+
+Plugin 'VundleVim/Vundle.vim'
+
+Plugin 'sheerun/vim-polyglot'
+Plugin 'dense-analysis/ale'
+Plugin 'jiangmiao/auto-pairs'
+
+Plugin 'ervandew/supertab'
+
+Plugin 'lervag/vimtex'
+
+Plugin 'ap/vim-css-color'
+
+Plugin 'rust-lang/rust.vim'
+
+Plugin 'morhetz/gruvbox'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+
+call vundle#end()
 
 " vimtex
 let g:vimtex_view_method = 'zathura'
 
 " theme
-syntax enable
-colorscheme palenight
-if (has("termguicolors"))
-  set termguicolors
-endif
-if (has("nvim"))
-  let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-endif
-let g:palenight_terminal_italics=1
-let g:palenight_gui_italic = 1
-let g:lightline = { 'colorscheme': 'palenight' }
-let g:airline_theme = "palenight"
+colorscheme gruvbox
+
+" airline
+let g:airline_theme = 'minimalist'
+let g:airline#extensions#tabline#enabled = 1
