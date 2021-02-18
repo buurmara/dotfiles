@@ -4,4 +4,4 @@ volume=$(pamixer --get-volume)
 
 speakers=$(pamixer --get-mute | sed 's/false/A/;s/true/M/')
 
-printf ' ^c#f1ebeb^VOL ^c#9358fe^%3s%% %s %s ' "$volume" "$speakers"
+printf ' ^c#EBDBB2^VOL ^c#B16286^%3s%% %s %s ' "$volume" "$speakers"

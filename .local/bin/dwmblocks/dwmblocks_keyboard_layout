@@ -7,4 +7,4 @@ else
 	layout='Us'
 fi
 
-printf ' ^c#f1ebeb^LAY ^c#00FFFF^%s ' "$layout"
+printf ' ^c#EBDBB2^LAY ^c#5696aa^%s ' "$layout"
