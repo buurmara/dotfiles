@@ -22,9 +22,6 @@ set wildmenu
 " disable wrapping a line in the middle of a word
 set linebreak
 
-" disable auto comment insertion
-set paste
-
 " spell checking
 " set spell
 " set spelllang=en,de
