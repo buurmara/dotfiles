@@ -1,0 +1,5 @@
+#!/bin/sh
+
+killall redshift
+
+redshift -b '0.7:0.7' -O 3500 -P
