@@ -10,6 +10,9 @@ then
 	unset f
 fi
 
+# load Xresources
+[ -f ${XDG_CONFIG_HOME:-$HOME/.config}/X11/Xresources ] && xrdb -merge -I$HOME ${XDG_CONFIG_HOME:-$HOME/.config}/X11/Xresources
+
 # start the session
 lxsession -a &
 
