@@ -8,6 +8,7 @@ export PATH="$PATH:/opt/resolve/bin/"
 xdg-settings set default-web-browser brave-browser.desktop
 export EDITOR='nvim'
 export PAGER='less'
+export MANPAGER='nvim +Man!'
 export READER='zathura'
 export TERMINAL='st'
 
