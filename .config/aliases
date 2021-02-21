@@ -12,13 +12,13 @@ alias cupd='paru -Syyu --devel; paru -c; paru -Sc'
 alias gpust='nvidia-smi'
 
 # list
-alias exa='exa --group-directories-first'
-alias ls='exa'
-alias l='exa'
-alias la='exa --all'
-alias ll='exa -all --long'
-alias lt='exa --tree'
-alias ldir='exa --only-dirs'
+alias lsd='lsd --classify --group-dirs first'
+alias ls='lsd'
+alias l='lsd'
+alias la='lsd --all'
+alias ll='lsd -all --long'
+alias lt='lsd --tree'
+alias ldir='lsd --only-dirs'
 
 # change directory
 alias cd..='cd ..'
