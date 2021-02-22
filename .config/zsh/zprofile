@@ -6,11 +6,13 @@ export PATH="$PATH:/opt/resolve/bin/"
 
 # default programs
 xdg-settings set default-web-browser brave-browser.desktop
+export BROWSER='brave'
 export EDITOR='nvim'
 export PAGER='less'
 export MANPAGER='nvim +Man!'
 export READER='zathura'
 export TERMINAL='st'
+export TERM='st-256color'
 
 # xdg variables
 export XDG_CACHE_HOME="$HOME/.cache"
