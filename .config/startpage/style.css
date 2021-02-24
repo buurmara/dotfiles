@@ -1,6 +1,7 @@
 :root {
     --bg: #282828;
-    --fg: #2F3640;
+    --fg: #383838;
+    --textcol: #EBDBB2;
 }
 
 body {
@@ -36,7 +37,7 @@ body {
     outline: none;
     float: left;
     padding: 0;
-    color: #FFF;
+    color: var(--textcol);
     font-size: 16px;
     transition: 0.4s;
     line-height: 40px;
@@ -45,7 +46,7 @@ body {
 
 #links {
     display: flex;
-    gap: 0 10vw;
+    gap: 0 7vw;
     position: absolute;
     top: 50%;
     left: 50%;
