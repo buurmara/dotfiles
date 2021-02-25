@@ -1,15 +1,9 @@
 #!/bin/sh
 
-# neovim
-alias vim='nvim'
-
 # update
 alias mirror='doas reflector --country Germany --protocol https --latest 50 --fastest 15 --age 18 --sort rate --verbose --save /etc/pacman.d/mirrorlist'
 alias cupdnc='paru -Syyu --devel --noconfirm; paru -c --noconfirm; paru -Sc --noconfirm'
 alias cupd='paru -Syyu --devel; paru -c; paru -Sc'
-
-# nvidia
-alias gpust='nvidia-smi'
 
 # list
 alias lsd='lsd --classify --group-dirs first'
@@ -38,9 +32,6 @@ alias fgrep='fgrep --color=auto'
 # documents view
 alias img='sxiv'
 alias pdf='zathura'
-
-# TeX Live
-alias tllm='tllocalmgr'
 
 # ping test
 alias tping='ping archlinux.org'
