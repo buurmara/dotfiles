@@ -23,7 +23,7 @@ setxkbmap de &
 picom -f &
 
 # Wallpaper
-xwallpaper --zoom "/data/pictures/wallpapers/current_wallpaper" &
+xwallpaper --zoom "${XDG_CONFIG_HOME:-$HOME/.config}/current_wallpaper" &
 #hsetroot -solid '#232323' &
 
 # jack2 setup
