@@ -1,10 +1,13 @@
 #!/bin/zsh
 
 # completion settings
-setopt EXTENDEDGLOB
-setopt GLOB_DOTS
-setopt ALIASES
-setopt CORRECT
-autoload -Uz compinit && compinit
+setopt extendedglob
+setopt glob_dots
+setopt aliases
+setopt magicequalsubst
+setopt correct
+autoload -Uz compinit
+compinit -d "${XDG_CACHE_HOME:-$HOME/.cache}/zcompdump"
 zstyle ':completion:*' menu select
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 zmodload zsh/complist
