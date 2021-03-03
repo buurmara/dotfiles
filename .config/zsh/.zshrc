@@ -16,14 +16,14 @@ source "${XDG_CONFIG_HOME:-$HOME/.config}/zsh/zcompletions"
 source "${XDG_CONFIG_HOME:-$HOME/.config}/zsh/zshortcuts"
 
 # vim mode
-#bindkey -v
-#export KEYTIMEOUT=1
+bindkey -v
+export KEYTIMEOUT=1
 
 # vim keys in the completion menu
-#bindkey -M menuselect 'h' vi-backward-char
-#bindkey -M menuselect 'l' vi-forward-char
-#bindkey -M menuselect 'k' vi-up-line-or-history
-#bindkey -M menuselect 'j' vi-down-line-or-history
+bindkey -M menuselect 'h' vi-backward-char
+bindkey -M menuselect 'l' vi-forward-char
+bindkey -M menuselect 'k' vi-up-line-or-history
+bindkey -M menuselect 'j' vi-down-line-or-history
 
 #different cursor shapes
 cursor_block="\e[1 q"

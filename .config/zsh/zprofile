@@ -2,7 +2,6 @@
 
 # add scripts to the path
 export PATH="$PATH:$(du "$HOME/.local/bin" | cut -f2 | paste -sd ':' -)"
-export PATH="$PATH:/opt/resolve/bin/"
 
 # default programs
 xdg-settings set default-web-browser brave-browser.desktop
@@ -36,9 +35,10 @@ export DSSI_PATH=/usr/lib/dssi:/usr/local/lib/dssi:~/.dssi
 export WGETRC="${XDG_CONFIG_HOME:-$HOME/.config}/wget/wgetrc"
 export GNUPGHOME="${XDG_DATA_HOME:-$HOME/.local/share}/gnupg"
 export PASSWORD_STORE_DIR="${XDG_DATA_HOME:-$HOME/.local/share}/password-store"
-export GTK_RC_FILES="${XDG_CONFIG_HOME:-$HOME/.config}/gtk-2.0/gtkrc-2.0"
+export GTK2_RC_FILES="${XDG_CONFIG_HOME:-$HOME/.config}/gtk-2.0/gtkrc-2.0"
 export _Z_DATA="${XDG_DATA_HOME:-$HOME/.local/share}/z/z"
 export GOPATH="${XDG_DATA_HOME:-$HOME/.local/share}/go"
+export LESSHISTFILE='-'
 
 # other variables
 export SUDO_ASKPASS="$HOME/.local/bin/dmenu/dmenu_askpass"
