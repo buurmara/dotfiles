@@ -46,5 +46,8 @@ export AWT_TOOLKIT='MToolkit wmname LG3D'
 export _JAVA_AWT_WM_NONREPARENTING=1
 export QT_QPA_PLATFORMTHEME='qt5ct'
 
+# gtk theme workaround (TODO: fix this)
+export GTK_THEME='Adwaita:dark'
+
 #execute startx at startup
 [ -z ${DISPLAY} ] && [ ${XDG_VTNR} -eq 1 ] && exec startx "${XDG_CONFIG_HOME:-$HOME/.config}/X11/xinitrc"
