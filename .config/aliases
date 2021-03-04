@@ -12,7 +12,6 @@ alias l='lsd'
 alias la='lsd --all'
 alias ll='lsd -all --long'
 alias lt='lsd --tree'
-alias ldir='lsd --only-dirs'
 
 # change directory
 alias cd..='cd ..'
