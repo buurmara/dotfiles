@@ -32,6 +32,9 @@ start_jack2.sh
 # start redshift
 redshift -O 3500
 
+# start dunst
+dunst &
+
 # start dwmblocks
 dwmblocks &
 
