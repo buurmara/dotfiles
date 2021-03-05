@@ -95,5 +95,8 @@ autoload -Uz colors && colors
 # starship prompt
 eval "$(starship init zsh)"
 
+# define PS2
+PS2='> '
+
 # zsh start
 neofetch
