@@ -39,8 +39,8 @@ alias tping='ping archlinux.org'
 # suckless
 alias sucklrcp='sudo cp config.def.h config.h && sudo make clean install; sudo make clean'
 
-# git
-alias dotfiles="git --git-dir=${XDG_DATA_HOME:-$HOME/.local/share}/dotfiles/ --work-tree=$HOME"
+# dotfiles bare git repo
+alias dofi="git --git-dir=${XDG_DATA_HOME:-$HOME/.local/share}/dotfiles/ --work-tree=$HOME"
 
 # calculator
 alias calc='echo CALCULATOR && bc -q'
