@@ -9,6 +9,8 @@ Plugin 'sheerun/vim-polyglot'
 Plugin 'dense-analysis/ale'
 Plugin 'jiangmiao/auto-pairs'
 
+Plugin 'tpope/vim-commentary'
+
 Plugin 'ervandew/supertab'
 
 Plugin 'lervag/vimtex'
