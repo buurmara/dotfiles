@@ -55,18 +55,6 @@ function preexec {
 }
 
 
-# colors
-autoload -Uz colors && colors
-
-# prompt variables
-PS1="%B%F{blue}%n%b%f %b%f<%F{green}%~%b%f> %F{red}$%b%f "
-PS2="> "
-
-# plugins
-source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh 2>/dev/null
-
-# z command
-. /opt/z/z.sh
 
 ## extr = EXTRactor for all kinds of archives
 ## usage: extr <file>
@@ -95,6 +83,21 @@ function extr()
 	fi
 }
 
+# plugins
+source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh 2>/dev/null
+
+# z command
+. /opt/z/z.sh
+
+# colors
+autoload -Uz colors && colors
+
+# prompt variables
+PS1="%B%F{blue}%n%b%f %b%f<%F{green}%~%b%f> %F{red}$%b%f "
+PS2="> "
+
+# starship prompt
+eval "$(starship init zsh)"
 
 # zsh start
 neofetch
