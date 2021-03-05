@@ -46,7 +46,7 @@ export AWT_TOOLKIT='MToolkit wmname LG3D'
 export _JAVA_AWT_WM_NONREPARENTING=1
 export QT_QPA_PLATFORMTHEME='qt5ct'
 
-# gtk theme workaround (TODO: fix this)
+# gtk theme
 export GTK_THEME='Adwaita:dark'
 
 #execute startx at startup
