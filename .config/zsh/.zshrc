@@ -92,10 +92,6 @@ source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.
 # colors
 autoload -Uz colors && colors
 
-# prompt variables
-PS1="%B%F{blue}%n%b%f %b%f<%F{green}%~%b%f> %F{red}$%b%f "
-PS2="> "
-
 # starship prompt
 eval "$(starship init zsh)"
 
