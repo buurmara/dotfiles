@@ -12,6 +12,7 @@ export MANPAGER='nvim +Man!'
 export READER='zathura'
 export TERMINAL='st'
 export TERM='st-256color'
+export EMAILCLIENT='mailspring'
 
 # xdg variables
 export XDG_CACHE_HOME="$HOME/.cache"
