@@ -1,5 +1,18 @@
 #!/bin/zsh
 
+
+#plugins
+source /usr/share/zsh/share/antigen.zsh
+antigen use oh-my-zsh
+
+antigen bundle git
+antigen bundle pip
+antigen bundle z
+antigen bundle zdharma/fast-syntax-highlighting
+
+antigen apply
+
+
 # history settings
 setopt hist_expire_dups_first
 setopt hist_reduce_blanks
@@ -82,12 +95,6 @@ function extr()
 		echo "'$1' is not a valid file"
 	fi
 }
-
-# plugins
-source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh 2>/dev/null
-
-# z command
-. /opt/z/z.sh
 
 # colors
 autoload -Uz colors && colors
