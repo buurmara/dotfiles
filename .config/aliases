@@ -41,6 +41,10 @@ alias sucklrcp='sudo cp config.def.h config.h && sudo make clean install; sudo m
 
 # dotfiles bare git repo
 alias dofi="git --git-dir=${XDG_DATA_HOME:-$HOME/.local/share}/dotfiles/ --work-tree=$HOME"
+alias dofis='dofi status'
+alias dofia='dofi add'
+alias doficm='dofi commit -m'
+alias dofip='dofi push'
 
 # calculator
 alias calc='echo CALCULATOR && bc -q'
