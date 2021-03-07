@@ -1,2 +1,4 @@
 # dotfiles
-My dotfiles (inspired by [weibrja]("https://github.com/weisbrja/dotfiles")) with various configurations.
+My dotfiles with various configurations.
+
+Inspired by: [weisbrja](https://github.com/weisbrja/dotfiles)
