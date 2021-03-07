@@ -34,7 +34,7 @@ alias img='sxiv'
 alias pdf='zathura'
 
 # ping test
-alias tping='ping archlinux.org'
+alias tping='ping artixlinux.org'
 
 # suckless
 alias sucklrcp='sudo cp config.def.h config.h && sudo make clean install; sudo make clean'
